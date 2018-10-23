@@ -1,19 +1,18 @@
-CREATE DATABASE Bamazon;
 
 USE Bamazon;
 
-CREATE TABLE Products(
-    ItemID MEDIUMINIT AUTO_INCREMENT NOT NULL,
-    ProductName VARCHAR(100) NOT NULL,
-    DepartmentName VARCHAR(50) NOT NULL,
-    Price DECIMAL (10,2) NOT NULL,
-    StockQuantity INT (10) NOT NULL,
-    primary key(ItemID)
-);
+-- CREATE TABLE Products(
+--     ItemID INT AUTO_INCREMENT NOT NULL,
+--     ProductName VARCHAR(100) NOT NULL,
+--     DepartmentName VARCHAR(50) NOT NULL,
+--     Price DECIMAL (10,2) NOT NULL,
+--     StockQuantity INT (10) NOT NULL,
+--     primary key(ItemID)
+-- );
 
 select * from Products;
 
-INSERT INTO Products(ProductName, DepartmentName, Price, StockQuantity)
+INSERT INTO Products (ProductName, DepartmentName, Price, StockQuantity)
 VALUES ("Hair tie", "beauty", 2.00, 1000),
     ("Shirt", "clothing", 20.00, 1000),
     ("flowers", "flowers", 6.00, 20),
